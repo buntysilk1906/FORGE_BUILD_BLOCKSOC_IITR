@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Deposit</title>
+    <link rel="stylesheet" href="./deposit_css.css">
+</head>
+
+<body style="font-family: Roboto; margin: 0;">
+
+    <div style="display: flex;flex-direction: column;row-gap: 15px;">
+        <div style="display: flex;flex-direction: row; background-color: #ade8f4; border: solid 2px black">
+            <div style="display: flex; flex-direction: column; flex: 1;">
+                <div>
+                    <h1 class="center">BlockChain Society IITR</h1>
+                </div>
+                <div>
+                    <h2 class="center" style="font-family: Lavishly Yours; font-size: 40px;">Forge Build Week-2</h2>
+                </div>
+            </div>
+            <div style="width:150px">
+                <img class="i" src="pictures/IITR-175-logo.svg">
+            </div>
+        </div>
+
+        <div class="center"><button id="connect">Connect</button></div>
+
+    </div>
+    <div class="bottom-section">
+        <div>
+            <input id="sendvalue" type="number" placeholder="0.1 ETH">
+            <button id="f">Deposit</button>
+        </div>
+        <div><button id="o">Owner Address</button></div>
+        <div id="owner">
+            Owner's Address
+        </div>
+        <div><button id="w">Withdraw</button></div>
+        <div style="margin-bottom: 15px;"><button id="a">Get Amount</button>
+            <span id="amountshow">Amount till now : </span>
+        </div>
+
+        <div style="display: flex;flex-direction: row;column-gap: 20px;">
+            <div style="width: 300px;">Address To Amount ->
+                <button id="list">Get</button>
+            </div>
+            <div id="atf"></div>
+        </div>
+
+
+    </div>
+
+    <script src="fundme.js" type="module"></script>
+</body>
+
+</html>
