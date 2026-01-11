@@ -44,7 +44,11 @@ async function f_deposit() {
     }
     amountshowbtn.innerHTML = "Depositing..."
     let inputvalue = document.getElementById("sendvalue").value
+    try{
     const deposit_tx = await deposit.fund({ value: ethers.utils.parseEther(inputvalue) })
+    }catch(error){
+        console.log("Transaction Declined")
+    }
     const hash = await deposit_tx.wait(1)
     console.log("tx-hash", hash)
 
@@ -103,3 +107,4 @@ async function f_address_to_amount() {
         atfshow.innerHTML += `Depositor : ${depositinfo.Depositor_Address} || Amount : ${ethers.utils.formatEther(depositinfo.Amount)} ETH <br><br>`;
     }
 }
+
