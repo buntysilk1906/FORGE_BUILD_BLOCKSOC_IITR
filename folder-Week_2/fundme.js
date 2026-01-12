@@ -51,7 +51,7 @@ async function f_deposit() {
          if (error.code === 4001) {
         console.log("User rejected the transaction")
     } else {
-        console.error("Transaction failed:", error)
+        console.log("Transaction failed:", error)
     }
 
     await f_Contract_balance()
@@ -114,6 +114,7 @@ async function f_address_to_amount() {
         atfshow.innerHTML += `Depositor : ${depositinfo.Depositor_Address} || Amount : ${ethers.utils.formatEther(depositinfo.Amount)} ETH <br><br>`;
     }
 }
+
 
 
 
