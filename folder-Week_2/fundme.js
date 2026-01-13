@@ -44,20 +44,20 @@ async function f_deposit() {
     }
     amountshowbtn.innerHTML = "Depositing..."
     let inputvalue = document.getElementById("sendvalue").value
+    let deposit_tx
     try{
-    const deposit_tx = await deposit.fund({ value: ethers.utils.parseEther(inputvalue) })
+    deposit_tx = await deposit.fund({ value: ethers.utils.parseEther(inputvalue) })
         await deposit_tx.wait(1)
     }catch(error){
          if (error.code === 4001) {
         console.log("User rejected the transaction")
-    } else {
-         const hash = await deposit_tx.wait(1)
+             f_Contract_balance()
+    } }
+    const hash = await deposit_tx.wait(1)
     console.log("tx-hash", hash)
 
     f_Contract_balance()
     f_address_to_amount()
-    }
-    }
    
 }
 
@@ -112,6 +112,7 @@ async function f_address_to_amount() {
         atfshow.innerHTML += `Depositor : ${depositinfo.Depositor_Address} || Amount : ${ethers.utils.formatEther(depositinfo.Amount)} ETH <br><br>`;
     }
 }
+
 
 
 
