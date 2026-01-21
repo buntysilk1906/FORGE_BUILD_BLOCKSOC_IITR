@@ -1,0 +1,97 @@
+/* Full page wrapper */
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    font-family: "Inter", sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #fff;
+}
+
+/* Card container */
+.card {
+    width: 100%;
+    max-width: 480px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    animation: fadeIn 0.4s ease-out;
+    text-align: center;
+}
+
+/* Heading */
+.heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Reserves display */
+.reserves {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Connect wallet button styling (works with your ConnectWallet component) */
+.connectButton {
+    padding: 0.8rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00e5ff, #2979ff);
+    color: #000;
+    transition: all 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+.connectButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 229, 255, 0.35);
+    opacity: 0.7;
+}
+
+.connectButton:active {
+    transform: scale(0.97);
+}
+
+.connectButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .reserves {
+        font-size: 0.95rem;
+    }
+}
