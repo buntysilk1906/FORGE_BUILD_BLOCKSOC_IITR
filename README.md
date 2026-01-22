@@ -38,7 +38,13 @@ showcasing my first project in FORGE_BUILD
 ->Wrote Amm.sol comprising of all the concept of Amm which includes(Liquidity adding , Withdrawal of liquidity , Swap tokens) and deployed it on chain  
 ->thereafter , I made two Test Tokens and listed up the properties of those Test Token in TestToken.sol and deployed it on chain  
 ->thereafter , I approved minted and approved the token  
-->I wrote a script to Initiate Liquididty  
+->wrote a script to Initiate Liquididty  
+->Set up the Project in Next js  
+->With some backend and frontend concluded the Amm Project  
+
+## Error Handling---week_2:  
+
+
 
 
 
