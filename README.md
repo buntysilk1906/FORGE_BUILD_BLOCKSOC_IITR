@@ -33,11 +33,13 @@ showcasing my first project in FORGE_BUILD
 > Make sure foundry.toml points to Sepolia correctly ([rpc_endpoints] sepolia = "${RPC_URL}")
 
 
-#week_3  
+# week_3  
 
 ->Wrote Amm.sol comprising of all the concept of Amm which includes(Liquidity adding , Withdrawal of liquidity , Swap tokens) and deployed it on chain  
 ->thereafter , I made two Test Tokens and listed up the properties of those Test Token in TestToken.sol and deployed it on chain  
-->
+->thereafter , I approved minted and approved the token  
+->I wrote a script to Initiate Liquididty  
+
 
 
 
