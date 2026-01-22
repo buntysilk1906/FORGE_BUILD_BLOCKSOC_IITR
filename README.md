@@ -43,6 +43,10 @@ showcasing my first project in FORGE_BUILD
 ->With some backend and frontend concluded the Amm Project  
 
 ## Error Handling---week_2:  
+->Account will stay connected even if we refresh the page  
+>
+
+
 
 
 
